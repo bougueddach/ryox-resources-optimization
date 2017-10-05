@@ -1,0 +1,28 @@
+[
+  {
+    "name": "brussel",
+    "latitude": 50.8427501,
+    "longitude": 4.3515499,
+    "origin": true
+  },
+  {
+    "name": "Bonheiden",
+    "latitude": 51.0185788,
+    "longitude":  4.5336048
+  },
+  {
+    "name": "Antwerp",
+    "latitude": 51.2605159,
+    "longitude":  4.2301104
+  },
+  {
+    "name": "Leuven",
+    "latitude": 50.8841972,
+    "longitude":  4.6352191
+  },
+  {
+    "name": "Zaventem",
+    "latitude": 50.8683589,
+    "longitude":  4.4433749
+  }
+]

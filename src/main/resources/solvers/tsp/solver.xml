@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <!--<environmentMode>FULL_ASSERT</environmentMode>-->
+
+    <solutionClass>com.sillaps.intern.planner.problems.tsp.TspProblem</solutionClass>
+    <entityClass>com.sillaps.intern.planner.problems.tsp.Place</entityClass>
+
+    <scoreDirectorFactory>
+        <!--<easyScoreCalculatorClass>org.optaplanner.examples.tsp.solver.score.TspEasyScoreCalculator</easyScoreCalculatorClass>-->
+        <!--<incrementalScoreCalculatorClass>com.sillaps.intern.planner.problems.tsp.ScoreTsp</incrementalScoreCalculatorClass>-->
+      <scoreDrl>solvers/tsp/rules.drl</scoreDrl>
+       <!--<assertionScoreDirectorFactory>-->
+        <!--<easyScoreCalculatorClass>org.optaplanner.examples.tsp.solver.score.TspEasyScoreCalculator</easyScoreCalculatorClass>-->
+        <!--</assertionScoreDirectorFactory>-->
+        <initializingScoreTrend>ONLY_DOWN</initializingScoreTrend>
+    </scoreDirectorFactory>
+
+    <termination>
+        <secondsSpentLimit>1</secondsSpentLimit>
+    </termination>
+
+    <constructionHeuristic>
+        <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+    </constructionHeuristic>
+    <localSearch>
+        <unionMoveSelector>
+            <changeMoveSelector/>
+        </unionMoveSelector>
+        <forager>
+            <acceptedCountLimit>1</acceptedCountLimit>
+        </forager>
+    </localSearch>
+
+</solver>
